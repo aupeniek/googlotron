@@ -27,8 +27,8 @@ tasks.withType(Test) {
 	reports.junitXml.destination = "$buildDir/test-results/" + systemProperties['browser']
 }
 
-task smokeTests(type: Test) {
-	include '**/SmokeTests.class'
+task helloTest(type: Test) {
+	include '**/hello.class'
 }
 
 task allTests(type: Test) {
