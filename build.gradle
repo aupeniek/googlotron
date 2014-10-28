@@ -27,8 +27,8 @@ tasks.withType(Test) {
 	reports.junitXml.destination = "$buildDir/test-results/" + systemProperties['browser']
 }
 
-task helloTests(type: Test) {
-	include '**/helloTests.class'
+task basicTests(type: Test) {
+	include '**/basicTests.class'
 }
 
 def loadConf() {
